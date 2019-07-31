@@ -152,6 +152,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-信息熵" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="信息熵"><a href="#信息熵" class="headerlink" title="信息熵"></a>信息熵</h5><p>​    确定一个有两种等概率可能的随机变量的信息为1bit，（即输入0或者1即可确认），也就是该随机变量的熵为1，若有四中可能，则需要, 2 bit，（即00,01,10,11）log2n。同理八种等概率可能需要log2 8=3bit。</p>
+<p>​    即确定一个有n中等概率可能情况的事件需要有log2n的信息量，可以理解为：若一个事件发生的概率为1/n，需要log2n的信息量来清除不确定，即熵为log2n。</p>
+<p>​    若为不等可能情况，由于各种情况相互独立，信息熵就变为确定所有可能结果的平均信息量。</p>
+<table>
+<thead>
+<tr>
+<th>晴 75%</th>
+<th>雨 25%</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>有0.75可能为晴</td>
+<td>有0.25可能为雨</td>
+</tr>
+<tr>
+<td>若晴，需log(1/0.75)=-log0.75的信息量</td>
+<td>若雨，需log(1/0.25)=-log0.25的信息量</td>
+</tr>
+</tbody></table>
+<p>信息熵为<br>$$<br>H(p(x)) = -\displaystyle \int^{}_{x}{p(x)logp(x)dx}<br>$$</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/31/信息熵/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-KL散度" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
