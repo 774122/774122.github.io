@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang>
+<html class="theme-next pisces use-motion" lang>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="KL散度定义​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概率分布为真实分布，另一个为理">
+<meta name="description" content="mathjax: true KL散度定义​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2019/07/31/KL散度/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="KL散度定义​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概率分布为真实分布，另一个为理">
+<meta property="og:description" content="mathjax: true KL散度定义​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-31T14:07:52.085Z">
+<meta property="og:updated_time" content="2019-07-31T14:46:32.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="KL散度定义​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概率分布为真实分布，另一个为理">
+<meta name="twitter:description" content="mathjax: true KL散度定义​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概">
 
 
 
@@ -97,7 +97,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -299,7 +299,8 @@
       
 
       
-        <h3 id="KL散度"><a href="#KL散度" class="headerlink" title="KL散度"></a>KL散度</h3><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概率分布为真实分布，另一个为理论分布，KL散度表示使用理论分布拟合真实分布时产生的信息损耗。</p>
+        <p>mathjax: true</p>
+<h3 id="KL散度"><a href="#KL散度" class="headerlink" title="KL散度"></a>KL散度</h3><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    KL散度又称为相对熵(relative entropy)，又称Kullback-Leibler散度或者信息散度，是两个概率分布（probability distribution）间差异的非对称性度量 。在信息理论中，相对熵等价于两个概率分布的信息熵（Shannon entropy）的差值。它是一些优化算法，如$EM$算法的损失函数，参与计算的一个概率分布为真实分布，另一个为理论分布，KL散度表示使用理论分布拟合真实分布时产生的信息损耗。</p>
 <p>​    其在离散和连续变量下的定义分别为：<br>$$<br>KL(P||Q) =\sum^{}_{}P(x)log{\frac{P(x)}{Q(x)}}<br>$$</p>
 <p>$$<br>KL(P||Q) =\int^{}_{}{}P(x)log{\frac{P(x)}{Q(x)}dx}<br>$$</p>
 <p>​    在信息理论中，相对熵是用来度量使用基于 $Q$ 的编码来编码来自P的样本平均所需的额外的比特个数。典型情况下，$P$ 表示数据的真实分布，$Q$ 表示数据的理论分布，模型分布，或 $P$ 的近似分布。给定一个字符集的概率分布，我们可以设计一种编码，使得表示该字符集组成的字符串平均需要的比特数最少。假设这个字符集是$X$，对  ，其出现概率为$P(x)$，那么其最优编码平均需要的比特数等于这个字符集的熵：<br>$$<br>H(x) =\sum^{}<em>{x \in X}P(x)log{\frac{1}{P(x)}}<br>$$<br>在同样的字符集上，假设存在另一个概率分布$Q(x)$，如果用概率分布$P(x)$的最优编码（即字符 x 的编码长度等于$log\frac{1}{P(x)}$），来为符合分布$Q(x)$ 的字符编码，那么表示这些字符就会比理想情况多用一些比特数。相对熵就是用来衡量这种情况下平均每个字符多用的比特数，因此可以用来衡量两个分布的距离，即：<br>$$<br>KL(P||Q) =-\sum^{}</em>{x \in X}P(x)log{\frac{1}{P(x)}} + \sum^{}<em>{x \in X}P(x)log{\frac{1}{Q(x)}}=\sum^{}</em>{x \in X}P(x)log{\frac{P(x)}{Q(x)}}<br>$$</p>
@@ -494,7 +495,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -594,6 +595,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -656,6 +664,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

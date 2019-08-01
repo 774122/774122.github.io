@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang>
+<html class="theme-next pisces use-motion" lang>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="sklearn1.sklearn.preprocessing1)LabelEncode：将Label标准化123456789&amp;gt;&amp;gt;&amp;gt; le = preprocessing.LabelEncoder()&amp;gt;&amp;gt;&amp;gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])LabelEncoder()&amp;gt;&amp;gt;&amp;gt; list">
+<meta name="description" content="mathjax: true sklearn1.sklearn.preprocessing1)LabelEncode：将Label标准化123456789&amp;gt;&amp;gt;&amp;gt; le = preprocessing.LabelEncoder()&amp;gt;&amp;gt;&amp;gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])LabelEncoder()&amp;gt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2019/07/29/库笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="sklearn1.sklearn.preprocessing1)LabelEncode：将Label标准化123456789&amp;gt;&amp;gt;&amp;gt; le = preprocessing.LabelEncoder()&amp;gt;&amp;gt;&amp;gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])LabelEncoder()&amp;gt;&amp;gt;&amp;gt; list">
+<meta property="og:description" content="mathjax: true sklearn1.sklearn.preprocessing1)LabelEncode：将Label标准化123456789&amp;gt;&amp;gt;&amp;gt; le = preprocessing.LabelEncoder()&amp;gt;&amp;gt;&amp;gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])LabelEncoder()&amp;gt">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="c:%5CUsers%5CAdministrator%5CDesktop%5C%E5%BA%93%E7%AC%94%E8%AE%B0%5C11.png">
-<meta property="og:updated_time" content="2019-03-04T12:01:02.833Z">
+<meta property="og:updated_time" content="2019-07-31T14:46:51.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="sklearn1.sklearn.preprocessing1)LabelEncode：将Label标准化123456789&amp;gt;&amp;gt;&amp;gt; le = preprocessing.LabelEncoder()&amp;gt;&amp;gt;&amp;gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])LabelEncoder()&amp;gt;&amp;gt;&amp;gt; list">
+<meta name="twitter:description" content="mathjax: true sklearn1.sklearn.preprocessing1)LabelEncode：将Label标准化123456789&amp;gt;&amp;gt;&amp;gt; le = preprocessing.LabelEncoder()&amp;gt;&amp;gt;&amp;gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])LabelEncoder()&amp;gt">
 <meta name="twitter:image" content="c:%5CUsers%5CAdministrator%5CDesktop%5C%E5%BA%93%E7%AC%94%E8%AE%B0%5C11.png">
 
 
@@ -99,7 +99,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -301,7 +301,8 @@
       
 
       
-        <h2 id="sklearn"><a href="#sklearn" class="headerlink" title="sklearn"></a><em>sklearn</em></h2><h4 id="1-sklearn-preprocessing"><a href="#1-sklearn-preprocessing" class="headerlink" title="1.sklearn.preprocessing"></a>1.sklearn.preprocessing</h4><h5 id="1-LabelEncode：将Label标准化"><a href="#1-LabelEncode：将Label标准化" class="headerlink" title="1)LabelEncode：将Label标准化"></a>1)LabelEncode：将Label标准化</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>le = preprocessing.LabelEncoder()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>le.fit([<span class="string">"paris"</span>, <span class="string">"paris"</span>, <span class="string">"tokyo"</span>, <span class="string">"amsterdam"</span>])</span><br><span class="line">LabelEncoder()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(le.classes_)</span><br><span class="line">[<span class="string">'amsterdam'</span>, <span class="string">'paris'</span>, <span class="string">'tokyo'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>le.transform([<span class="string">"tokyo"</span>, <span class="string">"tokyo"</span>, <span class="string">"paris"</span>]) <span class="comment"># Transform Categories Into Integers</span></span><br><span class="line">array([<span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>], dtype=int64)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(le.inverse_transform([<span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>])) <span class="comment">#Transform Integers Into Categories</span></span><br><span class="line">[<span class="string">'tokyo'</span>, <span class="string">'tokyo'</span>, <span class="string">'paris'</span>]</span><br></pre></td></tr></table></figure>
+        <p>mathjax: true</p>
+<h2 id="sklearn"><a href="#sklearn" class="headerlink" title="sklearn"></a><em>sklearn</em></h2><h4 id="1-sklearn-preprocessing"><a href="#1-sklearn-preprocessing" class="headerlink" title="1.sklearn.preprocessing"></a>1.sklearn.preprocessing</h4><h5 id="1-LabelEncode：将Label标准化"><a href="#1-LabelEncode：将Label标准化" class="headerlink" title="1)LabelEncode：将Label标准化"></a>1)LabelEncode：将Label标准化</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>le = preprocessing.LabelEncoder()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>le.fit([<span class="string">"paris"</span>, <span class="string">"paris"</span>, <span class="string">"tokyo"</span>, <span class="string">"amsterdam"</span>])</span><br><span class="line">LabelEncoder()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(le.classes_)</span><br><span class="line">[<span class="string">'amsterdam'</span>, <span class="string">'paris'</span>, <span class="string">'tokyo'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>le.transform([<span class="string">"tokyo"</span>, <span class="string">"tokyo"</span>, <span class="string">"paris"</span>]) <span class="comment"># Transform Categories Into Integers</span></span><br><span class="line">array([<span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>], dtype=int64)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list(le.inverse_transform([<span class="number">2</span>, <span class="number">2</span>, <span class="number">1</span>])) <span class="comment">#Transform Integers Into Categories</span></span><br><span class="line">[<span class="string">'tokyo'</span>, <span class="string">'tokyo'</span>, <span class="string">'paris'</span>]</span><br></pre></td></tr></table></figure>
 
 <p>#####2)sklearn.preprocessing.StandardScaler()</p>
 <h4 id="2-sklearn-metrics"><a href="#2-sklearn-metrics" class="headerlink" title="2.sklearn.metrics"></a>2.sklearn.metrics</h4><h2 id="Pandas"><a href="#Pandas" class="headerlink" title="Pandas"></a><strong><em>Pandas</em></strong></h2><h5 id="一、数据结构：序列Series与数据框DataFrame"><a href="#一、数据结构：序列Series与数据框DataFrame" class="headerlink" title="一、数据结构：序列Series与数据框DataFrame"></a>一、数据结构：序列Series与数据框DataFrame</h5><p>1.创建</p>
@@ -597,7 +598,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -697,6 +698,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -759,6 +767,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
